@@ -9,6 +9,9 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+console.log(configuration.apiKey);
+//alert(configuration.apiKey);
+
 const openai = new OpenAIApi(configuration);
 
 const app = express()
